@@ -23,9 +23,9 @@ class HttpTransport implements Transport {
   final HttpTransportRequestHandler _requestHandler;
 
   factory HttpTransport(SentryOptions options, RateLimiter rateLimiter) {
-    if (options.httpClient is NoOpClient) {
-      options.httpClient = getClientProvider().getClient(options);
-    }
+    // if (options.httpClient is NoOpClient) {
+    //   options.httpClient = getClientProvider().getClient(options);
+    // }
     return HttpTransport._(options, rateLimiter);
   }
 
