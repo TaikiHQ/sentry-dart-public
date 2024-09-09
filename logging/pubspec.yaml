@@ -19,7 +19,7 @@ platforms:
 
 dependencies:
   logging: ^1.0.0
-  sentry: 8.7.0
+  sentry: 8.9.0
 
 dev_dependencies:
   lints: ^4.0.0
